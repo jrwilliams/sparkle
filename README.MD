@@ -26,6 +26,16 @@ Scales are combined with data into a ```SparkDimension``` and expose methods for
 LinearDimension xdim = new LinearDimension(data, maxRange, minRange);
 ```
 
+###Customisation
+As well as defining the size of the sparkline, you can also customise the colour of the line and of the high and low point markers.
+
+```
+Sparkle sparkle = new Sparkle(...);
+sparkle.setLineColor(Color.red);
+sparkle.setPointColor(Color.blue);
+```
+
+
 ###Complete Example
 An example of generating an image on disk.
 
@@ -59,7 +69,7 @@ Sparkle sparkle = new Sparkle(imgHeight, imgWidth, padding);
 sparkle.renderToFile(xdim, ydim, new File("test.png"));;
 ```
 
-Generated an image: 
+Generated image: 
 
 ![](https://github.com/jrwilliams/sparkle/blob/master/test.png)
 
