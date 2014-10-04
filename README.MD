@@ -13,14 +13,14 @@ Please note: Sparkle is still in its very early stages and could be optimised in
 
 
 ###Scales
-Sparkle comes with two built-in scale types: ```LinearScale``` and ```DateScale```. You can define new scales by extending ```Scale``` and implementing the ```scale()```. The constructor takes the maximum and minimum values of the domain and range. The domain is the data; the range is the canvas.
+Scales map data to pixels on the canvas. A scale's domain is the data; its range is the canvas. Sparkle comes with two built-in scale types: ```LinearScale``` and ```DateScale```. You can define new scales by extending ```Scale``` and implementing the ```scale()```. The constructor takes the maximum and minimum values of the domain and range. 
 
 ```
 LinearScale scale = new LinearScale(maxDomain, minDomain, maxRange, minRange);
 ``` 
 
 ###Dimensions
-Scales are combined with data into a ```SparkDimension``` and expose methods for querying and scaling the data. The two built in dimensions mirror the scales: ```LinearDimension``` and ```DateDimension```.  The constructor takes the data, and the maximum and minimum values of the range. It creates the scale object internally. [This is ugly and needs fixing.]
+Scales are combined with data into a ```SparkDimension``` which exposes utility methods for querying and scaling the data. The two built in dimensions mirror the scales: ```LinearDimension``` and ```DateDimension```.  The constructor takes the data, and the maximum and minimum values of the range. It creates the scale object internally. [This is ugly and needs fixing.]
 
 ```
 LinearDimension xdim = new LinearDimension(data, maxRange, minRange);
