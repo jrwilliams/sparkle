@@ -71,7 +71,7 @@ sparkle.renderToFile(xdim, ydim, new File("test.png"));;
 
 Generated image: 
 
-<img src="https://github.com/jrwilliams/sparkle/blob/master/test.png" alt="example sparline" style="width:150px;height:30px">
+<img src="https://github.com/jrwilliams/sparkle/blob/master/test.png" alt="example sparkline" style="width:150px;height:30px" />
 
 ###Use with a Web Server
 If you'd like to generate these on a web server, you can use sparkle to generate a byte array. An example for Restlet:
